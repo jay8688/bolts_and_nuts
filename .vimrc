@@ -1,5 +1,6 @@
 " Ref: https://help.ubuntu.com/community/VimHowto
 " Also see /etc/vim/vimrc
+" Run sudo apt-get to intall vim-gnome and vim-gtk
 
 " Turn on line numbering. Turn it off with "set nonu" 
 set number
