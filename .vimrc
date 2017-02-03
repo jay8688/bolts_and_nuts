@@ -5,17 +5,18 @@
 " Turn on line numbering. Turn it off with "set nonu" 
 set number
 
-" Higlhight search
+" Highlight search
 set hls
 
 " Wrap text instead of being on one line
 set lbr
 
 " Change colorscheme from default to delek
-colorscheme delek
+"colorscheme delek
 
+" http://stackoverflow.com/a/21977418/2956795
 set wildmenu
-"set wildmode=longest:full,full
+set wildmode=longest:list,full
 
 " set cursorline
 
