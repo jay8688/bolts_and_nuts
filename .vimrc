@@ -37,3 +37,9 @@ map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
+
+" set up ctags following https://www.fusionbox.com/blog/detail/navigating-your-django-project-with-vim-and-ctags/590/
+"ctags -R --fields=+l --languages=python --python-kinds=-iv -f ~/tags_tensorflow_py35 $(python -c "import os, sys; print(' '.join('{}'.format(d) for d in sys.path if os.path.isdir(d)))")
+set tags=~/tags_tensorflow_py35
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
